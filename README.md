@@ -111,4 +111,5 @@ cd output && vercel --yes
 
 ## Live result
 
-- **Deployed URL**: Available on GitHub Pages / Vercel
+- **Live Deployed Case Study**: [https://priyansupattanaik.github.io/composio-research-agent/](https://priyansupattanaik.github.io/composio-research-agent/)
+- **GitHub Repository**: [https://github.com/priyansupattanaik/composio-research-agent](https://github.com/priyansupattanaik/composio-research-agent)
