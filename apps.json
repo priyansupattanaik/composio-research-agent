@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint_url": "salesforce.com",
+    "docs_search_query": "Salesforce REST API authentication developer docs"
+  },
+  {
+    "id": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint_url": "hubspot.com",
+    "docs_search_query": "HubSpot REST API authentication developer docs"
+  },
+  {
+    "id": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint_url": "pipedrive.com",
+    "docs_search_query": "Pipedrive REST API authentication developer docs"
+  },
+  {
+    "id": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint_url": "attio.com",
+    "docs_search_query": "Attio REST API authentication developer docs"
+  },
+  {
+    "id": 5,
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "hint_url": "twenty.com",
+    "docs_search_query": "Twenty REST API authentication developer docs"
+  },
+  {
+    "id": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint_url": "podio.com",
+    "docs_search_query": "Podio REST API authentication developer docs"
+  },
+  {
+    "id": 7,
+    "name": "Zoho CRM",
+    "category": "CRM and Sales",
+    "hint_url": "zoho.com/crm",
+    "docs_search_query": "Zoho CRM REST API authentication developer docs"
+  },
+  {
+    "id": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "hint_url": "close.com",
+    "docs_search_query": "Close REST API authentication developer docs"
+  },
+  {
+    "id": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "hint_url": "copper.com",
+    "docs_search_query": "Copper REST API authentication developer docs"
+  },
+  {
+    "id": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "hint_url": "api.docs.dealcloud.com",
+    "docs_search_query": "DealCloud REST API authentication developer docs"
+  },
+  {
+    "id": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint_url": "zendesk.com",
+    "docs_search_query": "Zendesk REST API authentication developer docs"
+  },
+  {
+    "id": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint_url": "intercom.com",
+    "docs_search_query": "Intercom REST API authentication developer docs"
+  },
+  {
+    "id": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "hint_url": "freshdesk.com",
+    "docs_search_query": "Freshdesk REST API authentication developer docs"
+  },
+  {
+    "id": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint_url": "front.com",
+    "docs_search_query": "Front REST API authentication developer docs"
+  },
+  {
+    "id": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint_url": "usepylon.com",
+    "docs_search_query": "Pylon REST API authentication developer docs"
+  },
+  {
+    "id": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "hint_url": "liveagent.com",
+    "docs_search_query": "LiveAgent REST API authentication developer docs"
+  },
+  {
+    "id": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "hint_url": "plain.com",
+    "docs_search_query": "Plain REST API authentication developer docs"
+  },
+  {
+    "id": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint_url": "helpscout.com",
+    "docs_search_query": "Help Scout REST API authentication developer docs"
+  },
+  {
+    "id": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint_url": "gorgias.com",
+    "docs_search_query": "Gorgias REST API authentication developer docs"
+  },
+  {
+    "id": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "hint_url": "gladly.com",
+    "docs_search_query": "Gladly REST API authentication developer docs"
+  },
+  {
+    "id": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint_url": "slack.com",
+    "docs_search_query": "Slack REST API authentication developer docs"
+  },
+  {
+    "id": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "hint_url": "twilio.com",
+    "docs_search_query": "Twilio REST API authentication developer docs"
+  },
+  {
+    "id": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint_url": "zoho.com/cliq",
+    "docs_search_query": "Zoho Cliq REST API authentication developer docs"
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "hint_url": "open.larksuite.com",
+    "docs_search_query": "Lark (Larksuite) REST API authentication developer docs"
+  },
+  {
+    "id": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "hint_url": "pumble.com",
+    "docs_search_query": "Pumble REST API authentication developer docs"
+  },
+  {
+    "id": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "hint_url": "discord.com",
+    "docs_search_query": "Discord REST API authentication developer docs"
+  },
+  {
+    "id": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "hint_url": "core.telegram.org",
+    "docs_search_query": "Telegram REST API authentication developer docs"
+  },
+  {
+    "id": 28,
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "hint_url": "developers.facebook.com/docs/whatsapp",
+    "docs_search_query": "WhatsApp Business REST API authentication developer docs"
+  },
+  {
+    "id": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "hint_url": "aircall.io",
+    "docs_search_query": "Aircall REST API authentication developer docs"
+  },
+  {
+    "id": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "hint_url": "developer.vonage.com",
+    "docs_search_query": "Vonage REST API authentication developer docs"
+  },
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "developers.google.com/google-ads",
+    "docs_search_query": "Google Ads REST API authentication developer docs"
+  },
+  {
+    "id": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "developers.facebook.com/docs/marketing-apis",
+    "docs_search_query": "Meta Ads REST API authentication developer docs"
+  },
+  {
+    "id": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "learn.microsoft.com/linkedin/marketing",
+    "docs_search_query": "LinkedIn Ads REST API authentication developer docs"
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "highlevel.stoplight.io",
+    "docs_search_query": "GoHighLevel REST API authentication developer docs"
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "mailchimp.com/developer",
+    "docs_search_query": "Mailchimp REST API authentication developer docs"
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "developers.klaviyo.com",
+    "docs_search_query": "Klaviyo REST API authentication developer docs"
+  },
+  {
+    "id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "systeme.io",
+    "docs_search_query": "systeme.io REST API authentication developer docs"
+  },
+  {
+    "id": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "developers.pinterest.com",
+    "docs_search_query": "Pinterest REST API authentication developer docs"
+  },
+  {
+    "id": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "developers.facebook.com/docs/threads",
+    "docs_search_query": "Threads (Meta) REST API authentication developer docs"
+  },
+  {
+    "id": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "hint_url": "sendgrid.com",
+    "docs_search_query": "SendGrid REST API authentication developer docs"
+  },
+  {
+    "id": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint_url": "shopify.dev",
+    "docs_search_query": "Shopify REST API authentication developer docs"
+  },
+  {
+    "id": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "hint_url": "woocommerce.com/document/woocommerce-rest-api",
+    "docs_search_query": "WooCommerce REST API authentication developer docs"
+  },
+  {
+    "id": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint_url": "developer.bigcommerce.com",
+    "docs_search_query": "BigCommerce REST API authentication developer docs"
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "hint_url": "developer.salesforce.com/docs/commerce",
+    "docs_search_query": "Salesforce Commerce Cloud REST API authentication developer docs"
+  },
+  {
+    "id": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint_url": "developer.adobe.com/commerce",
+    "docs_search_query": "Magento (Adobe Commerce) REST API authentication developer docs"
+  },
+  {
+    "id": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "hint_url": "developers.squarespace.com",
+    "docs_search_query": "Squarespace REST API authentication developer docs"
+  },
+  {
+    "id": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint_url": "api-docs.ecwid.com",
+    "docs_search_query": "Ecwid REST API authentication developer docs"
+  },
+  {
+    "id": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "hint_url": "gumroad.com/api",
+    "docs_search_query": "Gumroad REST API authentication developer docs"
+  },
+  {
+    "id": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint_url": "developer-docs.amazon.com/sp-api",
+    "docs_search_query": "Amazon Selling Partner REST API authentication developer docs"
+  },
+  {
+    "id": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "hint_url": "fanbasis.com",
+    "docs_search_query": "fanbasis REST API authentication developer docs"
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "docs.dataforseo.com",
+    "docs_search_query": "DataForSEO REST API authentication developer docs"
+  },
+  {
+    "id": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "seranking.com/api",
+    "docs_search_query": "SE Ranking REST API authentication developer docs"
+  },
+  {
+    "id": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "ahrefs.com/api",
+    "docs_search_query": "Ahrefs REST API authentication developer docs"
+  },
+  {
+    "id": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "docs.mrscraper.com",
+    "docs_search_query": "MrScraper REST API authentication developer docs"
+  },
+  {
+    "id": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "docs.apify.com",
+    "docs_search_query": "Apify REST API authentication developer docs"
+  },
+  {
+    "id": 56,
+    "name": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "firecrawl.dev",
+    "docs_search_query": "Firecrawl REST API authentication developer docs"
+  },
+  {
+    "id": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "brightdata.com",
+    "docs_search_query": "Bright Data REST API authentication developer docs"
+  },
+  {
+    "id": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "github.com/sherlock-project/sherlock",
+    "docs_search_query": "Sherlock REST API authentication developer docs"
+  },
+  {
+    "id": 59,
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "waterfall.io",
+    "docs_search_query": "Waterfall.io REST API authentication developer docs"
+  },
+  {
+    "id": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint_url": "clay.com",
+    "docs_search_query": "Clay REST API authentication developer docs"
+  },
+  {
+    "id": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "docs.github.com/rest",
+    "docs_search_query": "GitHub REST API authentication developer docs"
+  },
+  {
+    "id": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "vercel.com/docs/rest-api",
+    "docs_search_query": "Vercel REST API authentication developer docs"
+  },
+  {
+    "id": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "docs.netlify.com/api",
+    "docs_search_query": "Netlify REST API authentication developer docs"
+  },
+  {
+    "id": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "developers.cloudflare.com/api",
+    "docs_search_query": "Cloudflare REST API authentication developer docs"
+  },
+  {
+    "id": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "supabase.com/docs",
+    "docs_search_query": "Supabase REST API authentication developer docs"
+  },
+  {
+    "id": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "neo4j.com/docs/api",
+    "docs_search_query": "Neo4j REST API authentication developer docs"
+  },
+  {
+    "id": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "docs.snowflake.com",
+    "docs_search_query": "Snowflake REST API authentication developer docs"
+  },
+  {
+    "id": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "mongodb.com/docs/atlas/api",
+    "docs_search_query": "MongoDB Atlas REST API authentication developer docs"
+  },
+  {
+    "id": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "docs.datadoghq.com/api",
+    "docs_search_query": "Datadog REST API authentication developer docs"
+  },
+  {
+    "id": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data Platforms",
+    "hint_url": "docs.sentry.io/api",
+    "docs_search_query": "Sentry REST API authentication developer docs"
+  },
+  {
+    "id": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "hint_url": "developers.notion.com",
+    "docs_search_query": "Notion REST API authentication developer docs"
+  },
+  {
+    "id": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "hint_url": "airtable.com/developers",
+    "docs_search_query": "Airtable REST API authentication developer docs"
+  },
+  {
+    "id": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "hint_url": "developers.linear.app",
+    "docs_search_query": "Linear REST API authentication developer docs"
+  },
+  {
+    "id": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint_url": "developer.atlassian.com",
+    "docs_search_query": "Jira REST API authentication developer docs"
+  },
+  {
+    "id": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "hint_url": "developers.asana.com",
+    "docs_search_query": "Asana REST API authentication developer docs"
+  },
+  {
+    "id": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "hint_url": "developer.monday.com",
+    "docs_search_query": "Monday.com REST API authentication developer docs"
+  },
+  {
+    "id": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint_url": "clickup.com/api",
+    "docs_search_query": "ClickUp REST API authentication developer docs"
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "hint_url": "coda.io/developers",
+    "docs_search_query": "Coda REST API authentication developer docs"
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint_url": "smartsheet.com/developers",
+    "docs_search_query": "Smartsheet REST API authentication developer docs"
+  },
+  {
+    "id": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "hint_url": "help.getharvest.com/api-v2",
+    "docs_search_query": "Harvest REST API authentication developer docs"
+  },
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint_url": "stripe.com/docs/api",
+    "docs_search_query": "Stripe REST API authentication developer docs"
+  },
+  {
+    "id": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "hint_url": "plaid.com/docs",
+    "docs_search_query": "Plaid REST API authentication developer docs"
+  },
+  {
+    "id": 83,
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "hint_url": "binance-docs.github.io",
+    "docs_search_query": "Binance REST API authentication developer docs"
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "hint_url": null,
+    "docs_search_query": "Paygent Connect REST API authentication developer docs"
+  },
+  {
+    "id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "hint_url": "ipayx.ai/docs",
+    "docs_search_query": "iPayX REST API authentication developer docs"
+  },
+  {
+    "id": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint_url": "developer.intuit.com",
+    "docs_search_query": "QuickBooks REST API authentication developer docs"
+  },
+  {
+    "id": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "hint_url": "developer.xero.com",
+    "docs_search_query": "Xero REST API authentication developer docs"
+  },
+  {
+    "id": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint_url": "developer.brex.com",
+    "docs_search_query": "Brex REST API authentication developer docs"
+  },
+  {
+    "id": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "hint_url": "docs.ramp.com",
+    "docs_search_query": "Ramp REST API authentication developer docs"
+  },
+  {
+    "id": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "hint_url": "pitchbook.com",
+    "docs_search_query": "PitchBook REST API authentication developer docs"
+  },
+  {
+    "id": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "hint_url": "cloud.google.com/gemini",
+    "docs_search_query": "NotebookLM REST API authentication developer docs"
+  },
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "hint_url": "help.otter.ai",
+    "docs_search_query": "Otter AI REST API authentication developer docs"
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "hint_url": "fathom.video",
+    "docs_search_query": "Fathom REST API authentication developer docs"
+  },
+  {
+    "id": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "hint_url": "consensus.app",
+    "docs_search_query": "Consensus REST API authentication developer docs"
+  },
+  {
+    "id": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "hint_url": "reducto.ai",
+    "docs_search_query": "Reducto REST API authentication developer docs"
+  },
+  {
+    "id": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint_url": "docs.devin.ai",
+    "docs_search_query": "Devin REST API authentication developer docs"
+  },
+  {
+    "id": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint_url": "higgsfield.ai/cli",
+    "docs_search_query": "higgsfield REST API authentication developer docs"
+  },
+  {
+    "id": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "hint_url": "github.com/mermaid-js/mermaid-cli",
+    "docs_search_query": "Mermaid CLI REST API authentication developer docs"
+  },
+  {
+    "id": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint_url": "transcriptapi.com",
+    "docs_search_query": "YouTube Transcript REST API authentication developer docs"
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "hint_url": "grain.com",
+    "docs_search_query": "Grain REST API authentication developer docs"
+  }
+]

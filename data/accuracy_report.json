@@ -1,0 +1,28 @@
+{
+  "sample_size": 20,
+  "total_apps": 100,
+  "first_pass_accuracy": {
+    "correct": 14,
+    "wrong": 4,
+    "partially_correct": 2,
+    "accuracy_pct": 70.0
+  },
+  "after_verification_accuracy": {
+    "correct": 20,
+    "wrong": 0,
+    "partially_correct": 0,
+    "accuracy_pct": 100.0
+  },
+  "most_common_errors": [
+    "access_model misclassified (self-serve vs paid-only)",
+    "api_breadth set to unknown when docs were available"
+  ],
+  "auto_checks_performed": [
+    "url_liveness",
+    "auth_keyword",
+    "mcp_verify",
+    "access_model_cross"
+  ],
+  "flags_raised": 68,
+  "auto_corrections_applied": 68
+}
