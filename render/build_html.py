@@ -499,6 +499,20 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       document.getElementById('tableRowCounter').innerText = `Showing ${currentData.length} of ${APP_DATA.length} apps`;
     }
 
+    // Human Verdict Badge styling
+    function getHumanVerdictBadge(verdict) {
+      switch(verdict) {
+        case 'CORRECT':
+          return '<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-emerald-950 text-emerald-300 border border-emerald-800">CORRECT</span>';
+        case 'PARTIALLY-CORRECT':
+          return '<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-amber-950 text-amber-300 border border-amber-800">PARTIALLY-CORRECT</span>';
+        case 'WRONG':
+          return '<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-rose-950 text-rose-300 border border-rose-800">WRONG</span>';
+        default:
+          return `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-slate-800 text-slate-300">${verdict || 'PENDING'}</span>`;
+      }
+    }
+
     function renderVerifiedTable() {
       const tbody = document.getElementById('verifiedTableBody');
       tbody.innerHTML = '';
@@ -511,8 +525,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <td class="py-2 px-3 font-mono text-slate-400">${app.id}</td>
           <td class="py-2 px-3 font-medium text-slate-200">${app.name}</td>
           <td class="py-2 px-3 text-slate-400">${app.category}</td>
-          <td class="py-2 px-3">${getVerdictBadge(app.buildability)}</td>
-          <td class="py-2 px-3 text-slate-400 text-xs">${app.access_notes || app.auth_notes}</td>
+          <td class="py-2 px-3">${getHumanVerdictBadge(app.human_verdict)}</td>
+          <td class="py-2 px-3 text-slate-300 text-xs">${app.human_notes || app.access_notes || app.auth_notes}</td>
         `;
         tbody.appendChild(tr);
       });

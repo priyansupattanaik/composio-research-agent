@@ -13,11 +13,11 @@
     "access_notes": "Developer credentials provisioned via self-serve pathway",
     "api_type": "REST",
     "api_breadth": "medium",
-    "has_mcp": false,
-    "mcp_url": null,
+    "has_mcp": true,
+    "mcp_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://salesforce.com",
+    "evidence_url": "https://developer.salesforce.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.salesforce.com failed: HTTP status 403. Used search snippets. Automated web search and developer documentation extraction for Salesforce"
   },
@@ -39,7 +39,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://hubspot.com",
+    "evidence_url": "https://developers.hubspot.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.hubspot.com (609 chars extracted). Automated web search and developer documentation extraction for HubSpot"
   },
@@ -61,7 +61,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://pipedrive.com",
+    "evidence_url": "https://developers.pipedrive.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.pipedrive.com (314 chars extracted). Automated web search and developer documentation extraction for Pipedrive"
   },
@@ -83,7 +83,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://attio.com",
+    "evidence_url": "https://developers.attio.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.attio.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Attio"
   },
@@ -105,7 +105,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://twenty.com",
+    "evidence_url": "https://docs.twenty.com",
     "confidence": "high",
     "agent_notes": "Scraped https://twenty.com/developers (19 chars extracted). Automated web search and developer documentation extraction for Twenty"
   },
@@ -127,7 +127,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://podio.com",
+    "evidence_url": "https://developer.podio.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.podio.com (5 chars extracted). Automated web search and developer documentation extraction for Podio"
   },
@@ -172,7 +172,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://close.com",
+    "evidence_url": "https://developer.close.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.close.com (395 chars extracted). Automated web search and developer documentation extraction for Close"
   },
@@ -194,7 +194,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://copper.com",
+    "evidence_url": "https://developer.copper.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.copper.com (356 chars extracted). Automated web search and developer documentation extraction for Copper"
   },
@@ -216,7 +216,7 @@
     "mcp_url": null,
     "buildability": "build-after-outreach",
     "main_blocker": "Requires enterprise contract and client-specific tenant instance",
-    "evidence_url": "https://api.docs.dealcloud.com",
+    "evidence_url": "https://dealcloud.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.dealcloud.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Handled per Section 13: Institutional finance platform enterprise-gated"
   },
@@ -238,7 +238,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://zendesk.com",
+    "evidence_url": "https://developer.zendesk.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.zendesk.com (334 chars extracted). Automated web search and developer documentation extraction for Zendesk"
   },
@@ -260,7 +260,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://intercom.com",
+    "evidence_url": "https://developers.intercom.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.intercom.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Intercom"
   },
@@ -282,7 +282,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://freshdesk.com",
+    "evidence_url": "https://developers.freshdesk.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.freshdesk.com (366 chars extracted). Automated web search and developer documentation extraction for Freshdesk"
   },
@@ -304,7 +304,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://front.com",
+    "evidence_url": "https://dev.frontapp.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.front.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Front"
   },
@@ -326,7 +326,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://usepylon.com",
+    "evidence_url": "https://docs.usepylon.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.pylon.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Pylon"
   },
@@ -348,7 +348,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://liveagent.com",
+    "evidence_url": "https://www.liveagent.com/features/api/",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.liveagent.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for LiveAgent"
   },
@@ -370,7 +370,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://plain.com",
+    "evidence_url": "https://docs.plain.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.plain.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Plain"
   },
@@ -392,7 +392,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://helpscout.com",
+    "evidence_url": "https://developer.helpscout.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.help.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Help Scout"
   },
@@ -414,7 +414,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://gorgias.com",
+    "evidence_url": "https://developers.gorgias.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.gorgias.com (0 chars extracted). Automated web search and developer documentation extraction for Gorgias"
   },
@@ -437,7 +437,7 @@
     "mcp_url": null,
     "buildability": "build-after-outreach",
     "main_blocker": "Enterprise-only contact-sales gating for platform tenancy",
-    "evidence_url": "https://gladly.com",
+    "evidence_url": "https://developer.gladly.com",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.gladly.com (263 chars extracted). Handled per Section 13: Enterprise-only / contact-sales gated platform"
   },
@@ -459,7 +459,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://slack.com",
+    "evidence_url": "https://api.slack.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.slack.com failed: HTTP status 403. Used search snippets. Automated web search and developer documentation extraction for Slack"
   },
@@ -481,7 +481,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://twilio.com",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.twilio.com (1020 chars extracted). Automated web search and developer documentation extraction for Twilio"
   },
@@ -547,7 +547,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://pumble.com",
+    "evidence_url": "https://pumble.com/help/category/integrations/",
     "confidence": "high",
     "agent_notes": "Scraped https://developer.pumble.com (0 chars extracted). Automated web search and developer documentation extraction for Pumble"
   },
@@ -569,7 +569,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://discord.com",
+    "evidence_url": "https://discord.com/developers/docs/intro",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.discord.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Discord"
   },
@@ -635,7 +635,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://aircall.io",
+    "evidence_url": "https://developer.aircall.io",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.aircall.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Aircall"
   },
@@ -811,7 +811,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://systeme.io",
+    "evidence_url": "https://help.systeme.io",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.systeme.io.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for systeme.io"
   },
@@ -877,7 +877,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://sendgrid.com",
+    "evidence_url": "https://docs.sendgrid.com/api-reference",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.sendgrid.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for SendGrid"
   },
@@ -1141,7 +1141,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://seranking.com/api",
+    "evidence_url": "https://seranking.com/api.html",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.se.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for SE Ranking"
   },
@@ -1251,7 +1251,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://brightdata.com",
+    "evidence_url": "https://docs.brightdata.com",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.bright.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Bright Data"
   },
@@ -1317,7 +1317,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://clay.com",
+    "evidence_url": "https://clay.com/integrations",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.clay.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Clay"
   },
@@ -1335,8 +1335,8 @@
     "access_notes": "Developer credentials provisioned via self-serve pathway",
     "api_type": "REST",
     "api_breadth": "medium",
-    "has_mcp": false,
-    "mcp_url": null,
+    "has_mcp": true,
+    "mcp_url": "https://github.com/github/github-mcp-server",
     "buildability": "build-today",
     "main_blocker": null,
     "evidence_url": "https://docs.github.com/rest",
@@ -1401,8 +1401,8 @@
     "access_notes": "Developer credentials provisioned via self-serve pathway",
     "api_type": "REST",
     "api_breadth": "medium",
-    "has_mcp": false,
-    "mcp_url": null,
+    "has_mcp": true,
+    "mcp_url": "https://github.com/cloudflare/mcp-server-cloudflare",
     "buildability": "build-today",
     "main_blocker": null,
     "evidence_url": "https://developers.cloudflare.com/api",
@@ -1449,7 +1449,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://neo4j.com/docs/api",
+    "evidence_url": "https://neo4j.com/docs/",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.neo4j.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Neo4j"
   },
@@ -1533,8 +1533,8 @@
     "access_notes": "Developer credentials provisioned via self-serve pathway",
     "api_type": "REST",
     "api_breadth": "medium",
-    "has_mcp": false,
-    "mcp_url": null,
+    "has_mcp": true,
+    "mcp_url": "https://github.com/getsentry/sentry-mcp",
     "buildability": "build-today",
     "main_blocker": null,
     "evidence_url": "https://docs.sentry.io/api",
@@ -1845,7 +1845,7 @@
     "mcp_url": null,
     "buildability": "build-after-outreach",
     "main_blocker": "Merchant underwriting and sales approval required",
-    "evidence_url": "https://developer.paygent.com",
+    "evidence_url": "https://www.paygent.co.jp",
     "confidence": "failed",
     "agent_notes": "Primary scrape of https://developer.paygent.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Handled per Section 13: Gated payment gateway with thin public docs"
   },
@@ -2021,7 +2021,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://help.otter.ai",
+    "evidence_url": "https://otter.ai",
     "confidence": "medium",
     "agent_notes": "Primary scrape of https://developer.otter.com failed: [Errno 11001] getaddrinfo failed. Used search snippets. Automated web search and developer documentation extraction for Otter AI"
   },
@@ -2088,7 +2088,7 @@
     "mcp_url": null,
     "buildability": "build-today",
     "main_blocker": null,
-    "evidence_url": "https://reducto.ai",
+    "evidence_url": "https://docs.reducto.ai",
     "confidence": "high",
     "agent_notes": "Scraped https://reducto.ai/developers (623 chars extracted). Automated web search and developer documentation extraction for Reducto"
   },

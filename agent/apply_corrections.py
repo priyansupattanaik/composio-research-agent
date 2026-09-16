@@ -75,6 +75,8 @@ def apply_corrections(first_pass_file: str, checklist_file: str, output_file: st
             notes = info["notes"]
 
             app["human_verified"] = True
+            app["human_verdict"] = verdict_str
+            app["human_notes"] = notes
 
             # Update verification log
             if app_id in vlog_map:
@@ -97,6 +99,8 @@ def apply_corrections(first_pass_file: str, checklist_file: str, output_file: st
                 correct_count += 1
         else:
             app["human_verified"] = False
+            app["human_verdict"] = None
+            app["human_notes"] = None
 
         verified_apps.append(app)
 
@@ -185,7 +189,7 @@ def apply_wrong_note_correction(app: Dict[str, Any], notes: str):
         app["access_model"] = "contact-sales"
         app["buildability"] = "build-after-outreach"
         app["main_blocker"] = "Requires contact with sales team"
-    elif "paid-only" in lower_n:
+    elif "paid-only" in lower_n or "build-paid" in lower_n:
         app["access_model"] = "paid-only"
         app["buildability"] = "build-paid"
         app["main_blocker"] = "Paid account required"
@@ -193,6 +197,19 @@ def apply_wrong_note_correction(app: Dict[str, Any], notes: str):
         app["access_model"] = "self-serve"
         app["buildability"] = "build-today"
         app["main_blocker"] = None
+
+    if "basic auth" in lower_n:
+        app["auth_methods"] = ["Basic Auth"]
+        app["primary_auth"] = "Basic Auth"
+        app["auth_notes"] = "HTTP Basic Auth credentials supported"
+    elif "api key" in lower_n and "oauth" not in lower_n:
+        app["auth_methods"] = ["API Key"]
+        app["primary_auth"] = "API Key"
+        app["auth_notes"] = "API Key credentials supported"
+    elif "oauth2" in lower_n and "basic" not in lower_n and "api key" not in lower_n:
+        app["auth_methods"] = ["OAuth2"]
+        app["primary_auth"] = "OAuth2"
+        app["auth_notes"] = "OAuth2 authentication supported"
 
 
 if __name__ == "__main__":

@@ -2,8 +2,8 @@
   "P1_auth_distribution": {
     "all_methods": {
       "OAuth2": {
-        "count": 92,
-        "pct": 92.0
+        "count": 91,
+        "pct": 91.0
       },
       "API Key": {
         "count": 7,
@@ -14,14 +14,14 @@
         "pct": 3.0
       },
       "Basic Auth": {
-        "count": 1,
-        "pct": 1.0
+        "count": 2,
+        "pct": 2.0
       }
     },
     "primary_auth": {
       "OAuth2": {
-        "count": 92,
-        "pct": 92.0
+        "count": 91,
+        "pct": 91.0
       },
       "API Key": {
         "count": 4,
@@ -32,8 +32,8 @@
         "pct": 3.0
       },
       "Basic Auth": {
-        "count": 1,
-        "pct": 1.0
+        "count": 2,
+        "pct": 2.0
       }
     }
   },
@@ -360,7 +360,7 @@
     }
   ],
   "P8_headline_insights": [
-    "OAuth2 is supported by 92 of 100 apps, making it the most ubiquitous authentication method.",
+    "OAuth2 is supported by 91 of 100 apps, making it the most ubiquitous authentication method.",
     "Only 4 apps have an official MCP server; Developer, Infra and Data Platforms leads with 3.",
     "Finance and Fintech is the most gated category: 4 of 10 apps require enterprise outreach or partner approval.",
     "79 apps are build-today targets with no competing official MCP server.",

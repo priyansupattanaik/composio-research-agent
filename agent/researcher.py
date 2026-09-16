@@ -100,9 +100,12 @@ async def run_serper_search(client: httpx.AsyncClient, query: str, num_results: 
         pass
 
     # Generic fallback based on query terms
+    clean_domain = query.split()[0].lower()
+    if "." not in clean_domain:
+        clean_domain += ".com"
     return [{
         "title": query,
-        "url": "https://developer." + query.split()[0].lower() + ".com",
+        "url": f"https://developer.{clean_domain}",
         "snippet": f"Developer documentation and API authentication reference for {query}."
     }]
 
