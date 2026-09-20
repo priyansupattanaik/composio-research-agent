@@ -11,7 +11,30 @@ import websockets
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 HTML_PATH = ROOT_DIR / "output" / "index.html"
-EDGE_EXE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+
+def find_browser_executable():
+    candidates = [
+        r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+        r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
+        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+        "msedge",
+        "google-chrome",
+        "chromium-browser",
+        "chromium",
+        "microsoft-edge",
+    ]
+    for c in candidates:
+        if "\\" in c or "/" in c:
+            if Path(c).exists():
+                return str(c)
+        else:
+            found = shutil.which(c)
+            if found:
+                return str(found)
+    return None
+
+BROWSER_EXE = find_browser_executable()
 
 
 class CDPClient:
@@ -113,14 +136,17 @@ class TestInteractiveDeliverable(unittest.TestCase):
         if not HTML_PATH.exists():
             raise FileNotFoundError(f"Cannot find {HTML_PATH}")
 
+        if not BROWSER_EXE:
+            raise unittest.SkipTest("No supported Chromium/Edge browser found for CDP testing")
+
         cls.loop = asyncio.new_event_loop()
         asyncio.set_event_loop(cls.loop)
 
         cls.user_data_dir = tempfile.mkdtemp()
 
-        # Launch Edge in isolated headless mode
+        # Launch browser in isolated headless mode
         cls.edge_process = subprocess.Popen([
-            EDGE_EXE,
+            BROWSER_EXE,
             "--headless=new",
             f"--user-data-dir={cls.user_data_dir}",
             "--remote-debugging-port=9222",
@@ -315,13 +341,18 @@ class TestInteractiveDeliverable(unittest.TestCase):
 
     def test_04_verdict_filtering(self):
         """Verify verdict (buildability) dropdown filtering across all statuses."""
+        with open(ROOT_DIR / "data" / "verified.json", "r", encoding="utf-8") as f:
+            verified = json.load(f)
+        from collections import Counter
+        counts = Counter(a["buildability"] for a in verified)
         verdict_counts = {
-            "build-today": 83,
-            "build-after-outreach": 12,
-            "not-buildable": 3,
-            "build-paid": 1,
-            "needs-research": 1
+            "build-today": counts.get("build-today", 0),
+            "build-after-outreach": counts.get("build-after-outreach", 0),
+            "not-buildable": counts.get("not-buildable", 0),
+            "build-paid": counts.get("build-paid", 0),
+            "needs-research": counts.get("needs-research", 0),
         }
+        verdict_counts = {k: v for k, v in verdict_counts.items() if v > 0}
 
         for verdict, expected_count in verdict_counts.items():
             res = self.run_async(self.cdp.eval_js(f"""

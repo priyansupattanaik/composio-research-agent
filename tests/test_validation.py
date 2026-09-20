@@ -90,6 +90,17 @@ class TestComposioResearchAgent(unittest.TestCase):
             self.assertIsNotNone(app.get("human_notes"))
             self.assertGreater(len(app["human_notes"]), 5)
 
+    def test_05a_false_partner_gates_are_build_today(self):
+        """Partner-directory marketing must not keep self-serve APIs off the ready list."""
+        expected_ready = ["Zoho CRM", "Mailchimp", "BigCommerce", "Asana", "Xero", "Ramp"]
+        by_name = {a["name"]: a for a in self.apps}
+        for name in expected_ready:
+            self.assertIn(name, by_name, f"Missing app {name}")
+            app = by_name[name]
+            self.assertEqual(app["access_model"], "self-serve", name)
+            self.assertEqual(app["buildability"], "build-today", name)
+            self.assertIsNone(app["main_blocker"], name)
+
     def test_05_specific_corrections_applied(self):
         # App 51: DataForSEO was WRONG in first pass (OAuth2), corrected to Basic Auth
         app_51 = next(a for a in self.apps if a["id"] == 51)

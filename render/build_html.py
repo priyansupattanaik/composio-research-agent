@@ -427,7 +427,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <!-- SECTION G: Footer -->
   <footer class="border-t border-slate-800 bg-slate-950 py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-400 space-y-2">
-      <p>Built with: Claude claude-sonnet-4-6, Composio SDK, Serper API, BeautifulSoup</p>
+      <p>Built with: NVIDIA Nemotron (NIM), Composio SDK, Serper API, BeautifulSoup</p>
       <p>
         <a href="https://github.com/priyansupattanaik/composio-research-agent" target="_blank" class="text-indigo-400 hover:underline">
           GitHub Repository

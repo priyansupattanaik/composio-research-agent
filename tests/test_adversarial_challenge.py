@@ -289,41 +289,49 @@ class ChallengerAdversarialTest(unittest.TestCase):
             self.assertTrue(s.endswith("."), f"Sentence must end with a period: {s}")
             self.assertTrue(any(ch.isdigit() for ch in s), f"Sentence must contain a number: {s}")
 
-        # Insight 1: Auth distribution claim
+        # Insight 1: Auth distribution claim must match recomputed primary-auth counts
         match1 = re.search(r"(\w+) is supported by (\d+) of (\d+) apps", p8_data[0])
         self.assertIsNotNone(match1, f"Failed regex on insight 1: {p8_data[0]}")
         auth_name, count_str, total_str = match1.groups()
-        self.assertEqual(auth_name, "OAuth2")
-        self.assertEqual(int(count_str), 91)
+        primary_counter = Counter(a["primary_auth"] for a in self.verified)
+        top_auth, top_count = primary_counter.most_common(1)[0]
+        self.assertEqual(auth_name, top_auth)
+        self.assertEqual(int(count_str), top_count)
         self.assertEqual(int(total_str), 100)
 
         # Insight 2: MCP claim
         match2 = re.search(r"Only (\d+) apps have an official MCP server; (.+) leads with (\d+)\.", p8_data[1])
         self.assertIsNotNone(match2, f"Failed regex on insight 2: {p8_data[1]}")
         total_mcp, top_cat, top_mcp_cnt = match2.groups()
-        self.assertEqual(int(total_mcp), 4)
-        self.assertEqual(top_cat, "Developer, Infra and Data Platforms")
-        self.assertEqual(int(top_mcp_cnt), 3)
+        self.assertEqual(int(total_mcp), sum(1 for a in self.verified if a["has_mcp"]))
+        self.assertEqual(top_cat, self.patterns["P6_mcp_landscape"]["top_category"])
+        self.assertEqual(int(top_mcp_cnt), self.patterns["P6_mcp_landscape"]["top_category_mcp_count"])
 
         # Insight 3: Gated category claim
         match3 = re.search(r"(.+) is the most gated category: (\d+) of (\d+) apps require enterprise outreach or partner approval\.", p8_data[2])
         self.assertIsNotNone(match3, f"Failed regex on insight 3: {p8_data[2]}")
         cat_name, gated_cnt, total_cat = match3.groups()
-        self.assertEqual(cat_name, "Finance and Fintech")
-        self.assertEqual(int(gated_cnt), 4)
+        expected_cat = self.patterns["P7_category_self_serve_rate"][-1]["category"]
+        expected_gated = sum(
+            1 for a in self.verified
+            if a["category"] == expected_cat and a["access_model"] in ["contact-sales", "partner-gated"]
+        )
+        self.assertEqual(cat_name, expected_cat)
+        self.assertEqual(int(gated_cnt), expected_gated)
         self.assertEqual(int(total_cat), 10)
 
         # Insight 4: Easy wins claim
         match4 = re.search(r"(\d+) apps are build-today targets with no competing official MCP server\.", p8_data[3])
         self.assertIsNotNone(match4, f"Failed regex on insight 4: {p8_data[3]}")
         easy_cnt = int(match4.group(1))
-        self.assertEqual(easy_cnt, 79)
+        self.assertEqual(easy_cnt, self.patterns["P4_easy_wins"]["count"])
 
         # Insight 5: Blocker claim
         match5 = re.search(r"The top blocker to immediate buildability is (.+), affecting (\d+) apps\.", p8_data[4])
         self.assertIsNotNone(match5, f"Failed regex on insight 5: {p8_data[4]}")
         blocker_text, blocker_cnt = match5.groups()
-        self.assertEqual(int(blocker_cnt), 11)
+        self.assertEqual(int(blocker_cnt), self.patterns["P5_common_blockers"][0]["count"])
+        self.assertEqual(blocker_text, self.patterns["P5_common_blockers"][0]["blocker"].lower())
 
     # =========================================================================
     # 3. CHALLENGE: data/accuracy_report.json vs data/human_review_checklist.md

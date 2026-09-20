@@ -99,23 +99,30 @@ async def run_serper_search(client: httpx.AsyncClient, query: str, num_results: 
     except Exception:
         pass
 
-    # Generic fallback based on query terms
-    clean_domain = query.split()[0].lower()
-    if "." not in clean_domain:
-        clean_domain += ".com"
-    return [{
-        "title": query,
-        "url": f"https://developer.{clean_domain}",
-        "snippet": f"Developer documentation and API authentication reference for {query}."
-    }]
+    return []
+
+
+def hint_to_url(hint_url: Optional[str]) -> Optional[str]:
+    if not hint_url:
+        return None
+    hint_url = hint_url.strip()
+    if hint_url.startswith("http://") or hint_url.startswith("https://"):
+        return hint_url
+    return f"https://{hint_url.lstrip('/')}"
 
 
 def select_best_docs_url(search_results: List[Dict[str, str]], hint_url: Optional[str], app_name: str) -> str:
-    if not search_results:
-        if hint_url:
-            clean_hint = hint_url.replace("https://", "").replace("http://", "").split("/")[0]
-            return f"https://{clean_hint}"
-        return f"https://developer.{app_name.lower().replace(' ', '')}.com"
+    hint_full = hint_to_url(hint_url)
+    generic_prefix = "Developer documentation and API authentication reference for"
+    real_results = [
+        item for item in (search_results or [])
+        if item.get("url") and not str(item.get("snippet", "")).startswith(generic_prefix)
+    ]
+    if not real_results:
+        if hint_full:
+            return hint_full
+        slug = re.sub(r"[^a-z0-9]+", "", (app_name or "").lower())
+        return f"https://developer.{slug}.com"
 
     domain_match = None
     if hint_url:
@@ -123,20 +130,22 @@ def select_best_docs_url(search_results: List[Dict[str, str]], hint_url: Optiona
 
     # Priority 1: Contains developer/docs/api AND matches domain
     if domain_match:
-        for item in search_results:
+        for item in real_results:
             url = item.get("url", "").lower()
             if any(k in url for k in ["developer.", "docs.", "api.", "developers."]) and domain_match in url:
                 return item["url"]
 
     # Priority 2: From app's own domain
     if domain_match:
-        for item in search_results:
+        for item in real_results:
             url = item.get("url", "").lower()
             if domain_match in url:
                 return item["url"]
 
-    # Priority 3: First result
-    return search_results[0].get("url", "")
+    # Priority 3: Hint URL, else first real result
+    if hint_full:
+        return hint_full
+    return real_results[0].get("url", "")
 
 
 async def scrape_page(client: httpx.AsyncClient, url: str) -> tuple[str, bool, Optional[str]]:
@@ -237,23 +246,16 @@ def validate_and_fix_record(record: Dict[str, Any], default_evidence_url: str, a
     if record["confidence"] not in ALLOWED_CONFIDENCE:
         record["confidence"] = "medium"
 
-    # 9. buildability & logical consistency checks
-    if record["access_model"] == "contact-sales" and record.get("buildability") == "build-today":
-        record["buildability"] = "build-after-outreach"
-    elif record["access_model"] == "partner-gated" and record.get("buildability") == "build-today":
-        record["buildability"] = "build-after-outreach"
-    elif record["access_model"] == "paid-only" and record.get("buildability") == "build-today":
-        record["buildability"] = "build-paid"
-    elif record["api_type"] == "No Public API":
-        record["buildability"] = "not-buildable"
+    # 9. Always derive buildability from access_model + api_type
+    from agent.extractor import derive_buildability
+    derived, derived_blocker = derive_buildability(record["access_model"], record["api_type"])
+    record["buildability"] = derived
+    record["main_blocker"] = derived_blocker
 
     if record["buildability"] not in ALLOWED_BUILDABILITY:
         record["buildability"] = "needs-research"
-
-    if record["buildability"] == "build-today":
-        record["main_blocker"] = None
-    elif not record["main_blocker"]:
-        record["main_blocker"] = f"Requires {record['access_model']} access or research"
+        if not record["main_blocker"]:
+            record["main_blocker"] = f"Requires {record['access_model']} access or research"
 
     # 10. notes
     if not record.get("one_liner"):

@@ -47,10 +47,10 @@
       "no-public-api": 1
     },
     "CRM and Sales": {
-      "self-serve": 8,
+      "self-serve": 9,
       "paid-only": 0,
       "contact-sales": 1,
-      "partner-gated": 1,
+      "partner-gated": 0,
       "unclear": 0,
       "no-public-api": 0
     },
@@ -79,34 +79,34 @@
       "no-public-api": 0
     },
     "Ecommerce": {
-      "self-serve": 7,
+      "self-serve": 8,
       "paid-only": 0,
       "contact-sales": 1,
-      "partner-gated": 1,
+      "partner-gated": 0,
       "unclear": 1,
       "no-public-api": 0
     },
     "Finance and Fintech": {
-      "self-serve": 6,
+      "self-serve": 8,
       "paid-only": 0,
       "contact-sales": 2,
-      "partner-gated": 2,
+      "partner-gated": 0,
       "unclear": 0,
       "no-public-api": 0
     },
     "Marketing, Ads, Email and Social": {
-      "self-serve": 9,
+      "self-serve": 10,
       "paid-only": 0,
       "contact-sales": 0,
-      "partner-gated": 1,
+      "partner-gated": 0,
       "unclear": 0,
       "no-public-api": 0
     },
     "Productivity and Project Management": {
-      "self-serve": 9,
+      "self-serve": 10,
       "paid-only": 0,
       "contact-sales": 0,
-      "partner-gated": 1,
+      "partner-gated": 0,
       "unclear": 0,
       "no-public-api": 0
     },
@@ -121,12 +121,12 @@
   },
   "P3_buildability_distribution": {
     "build-today": {
-      "count": 83,
-      "pct": 83.0
+      "count": 89,
+      "pct": 89.0
     },
     "build-after-outreach": {
-      "count": 12,
-      "pct": 12.0
+      "count": 6,
+      "pct": 6.0
     },
     "not-buildable": {
       "count": 3,
@@ -142,13 +142,14 @@
     }
   },
   "P4_easy_wins": {
-    "count": 79,
+    "count": 85,
     "apps": [
       "HubSpot",
       "Pipedrive",
       "Attio",
       "Twenty",
       "Podio",
+      "Zoho CRM",
       "Close",
       "Copper",
       "Zendesk",
@@ -173,6 +174,7 @@
       "Meta Ads",
       "LinkedIn Ads",
       "GoHighLevel",
+      "Mailchimp",
       "Klaviyo",
       "systeme.io",
       "Pinterest",
@@ -180,6 +182,7 @@
       "SendGrid",
       "Shopify",
       "WooCommerce",
+      "BigCommerce",
       "Magento (Adobe Commerce)",
       "Squarespace",
       "Ecwid",
@@ -204,6 +207,7 @@
       "Airtable",
       "Linear",
       "Jira",
+      "Asana",
       "Monday.com",
       "ClickUp",
       "Coda",
@@ -214,7 +218,9 @@
       "Binance",
       "iPayX",
       "QuickBooks",
+      "Xero",
       "Brex",
+      "Ramp",
       "Fathom",
       "Consensus",
       "Reducto",
@@ -228,7 +234,7 @@
   "P5_common_blockers": [
     {
       "blocker": "Contact-sales gating",
-      "count": 11
+      "count": 5
     },
     {
       "blocker": "Requires enterprise contract a",
@@ -305,31 +311,37 @@
       "self_serve_pct": 100.0
     },
     {
+      "category": "Marketing, Ads, Email and Social",
+      "self_serve_count": 10,
+      "total": 10,
+      "self_serve_pct": 100.0
+    },
+    {
       "category": "Developer, Infra and Data Platforms",
       "self_serve_count": 10,
       "total": 10,
       "self_serve_pct": 100.0
     },
     {
-      "category": "Marketing, Ads, Email and Social",
-      "self_serve_count": 9,
-      "total": 10,
-      "self_serve_pct": 90.0
-    },
-    {
       "category": "Productivity and Project Management",
-      "self_serve_count": 9,
+      "self_serve_count": 10,
       "total": 10,
-      "self_serve_pct": 90.0
+      "self_serve_pct": 100.0
     },
     {
       "category": "CRM and Sales",
+      "self_serve_count": 9,
+      "total": 10,
+      "self_serve_pct": 90.0
+    },
+    {
+      "category": "Support and Helpdesk",
       "self_serve_count": 8,
       "total": 10,
       "self_serve_pct": 80.0
     },
     {
-      "category": "Support and Helpdesk",
+      "category": "Ecommerce",
       "self_serve_count": 8,
       "total": 10,
       "self_serve_pct": 80.0
@@ -341,29 +353,23 @@
       "self_serve_pct": 80.0
     },
     {
-      "category": "AI, Research and Media-native",
+      "category": "Finance and Fintech",
       "self_serve_count": 8,
       "total": 10,
       "self_serve_pct": 80.0
     },
     {
-      "category": "Ecommerce",
-      "self_serve_count": 7,
+      "category": "AI, Research and Media-native",
+      "self_serve_count": 8,
       "total": 10,
-      "self_serve_pct": 70.0
-    },
-    {
-      "category": "Finance and Fintech",
-      "self_serve_count": 6,
-      "total": 10,
-      "self_serve_pct": 60.0
+      "self_serve_pct": 80.0
     }
   ],
   "P8_headline_insights": [
     "OAuth2 is supported by 91 of 100 apps, making it the most ubiquitous authentication method.",
     "Only 4 apps have an official MCP server; Developer, Infra and Data Platforms leads with 3.",
-    "Finance and Fintech is the most gated category: 4 of 10 apps require enterprise outreach or partner approval.",
-    "79 apps are build-today targets with no competing official MCP server.",
-    "The top blocker to immediate buildability is contact-sales gating, affecting 11 apps."
+    "AI, Research and Media-native is the most gated category: 1 of 10 apps require enterprise outreach or partner approval.",
+    "85 apps are build-today targets with no competing official MCP server.",
+    "The top blocker to immediate buildability is contact-sales gating, affecting 5 apps."
   ]
 }
