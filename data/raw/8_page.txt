@@ -1,0 +1,6 @@
+Whether you’re a Close customer automating your sales process or a partner building an integration, the Close Developer Platform gives everything you or your AI agents need.
+Full endpoint docs with schemas, examples, and an interactive API explorer.
+API keys for scripts or OAuth 2.0 for user-facing integrations.
+Create an OAuth app, connect your product, and get listed.
+Use cases
+Getting help

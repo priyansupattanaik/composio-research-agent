@@ -1,0 +1,22 @@
+Product
+Industries
+Resources
+One API for every document
+Get your API key
+Sign up at studio.reducto.ai and create an API key. Set it as an environment variable.
+Install the SDK
+Parse your first document
+Use the structured output
+SDKs
+First-class clients for Python, Node.js, and Go with full type safety. Install and authenticate in seconds.
+CLI
+MCP Server
+Built for production
+SaaS, hybrid VPC, full VPC, or air-gapped on-premises. EU and AU regional endpoints available.
+Documentation
+Comprehensive guides, API references, and configuration options for every endpoint.
+API Reference
+Cookbooks
+Blog
+Cookbook library
+Compare

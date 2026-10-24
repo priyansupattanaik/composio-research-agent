@@ -1,0 +1,6 @@
+Netlify SDK
+Documentation
+Explore all of the capabilities of the Netlify SDK. From authentication to syncing data. From triggering actions
+        based on build events to using the extension UI. Find it all in the official docs.
+Ship Faster
+Broad Applicability

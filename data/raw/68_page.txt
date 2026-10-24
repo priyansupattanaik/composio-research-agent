@@ -1,0 +1,3 @@
+Welcome to the MongoDB Docs
+MongoDB also offers
+How This Documentation is Organized

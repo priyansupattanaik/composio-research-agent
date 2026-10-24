@@ -1,0 +1,6 @@
+Overview Copy Copy for LLM Copy page as Markdown for LLMs View as Markdown Open this page as Markdown Open in ChatGPT Get insights from ChatGPT Open in Claude Get insights from Claude
+Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.
+Quickstart
+Check out our quickstart guide to get up and running making your first Brex API call in just a few minutes. The rest of the guides and documentation provide more in-depth context.
+API Status
+Join us on Slack

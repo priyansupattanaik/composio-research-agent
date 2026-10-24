@@ -1,0 +1,98 @@
+Let me analyze the provided text and search snippets to extract the required information for the Gladly API.
+
+First, let me understand what I know from the text:
+
+1. App: Gladly
+2. Category: Support and Helpdesk (but the schema says "CRM and Sales" - I need to check if this is the category field or if I should use what's provided)
+3. Known URL: gladly.com
+
+Search result snippets:
+- search1: "Gladly API authentication developer documentation" at https://developer.gladly.com - snippet mentions "Developer documentation and API authentication reference for Gladly API authentication developer documentation."
+- search2: "Gladly API free trial developer access pricing OAuth" at https://developer.gladly.com - snippet mentions "Developer documentation and API authentication reference for Gladly API free trial developer access pricing OAuth."
+- search3: "Gladly MCP server model context protocol official" at https://developer.gladly.com - snippet mentions "Developer documentation and API authentication reference for Gladly MCP server model context protocol official."
+
+Scraped page content mentions:
+- App Platform
+- REST API
+- Integrate seamlessly with Gladly by enabling a connector, calling Gladly's REST APIs, or implementing the Lookup API
+- Chat SDK
+- Help Center
+- Tutorials
+- Code Examples
+
+Best evidence URL: https://developer.gladly.com
+
+Now let me extract each field:
+
+1. id: The schema says "id": 1, so I'll use 1
+
+2. name: "Gladly" (from the app name)
+
+3. category: The input says "Category: Support and Helpdesk" but the schema example shows "CRM and Sales". Looking at the rules, I should extract from the text. The input category is "Support and Helpdesk" but the schema default is "CRM and Sales". I think I should use what's provided in the input, which is "Support and Helpdesk". Wait, let me re-read... The schema has "CRM and Sales" as the example, but the input says "Category: Support and Helpdesk". I should use the actual category from the input text.
+
+Actually, looking more carefully, the user says "Category: Support and Helpdesk" in the input. I should use "Support and Helpdesk" for the category field.
+
+4. one_liner: "Short summary" - I need to create a short summary based on the text. From the scraped content: "Integrate seamlessly with Gladly by enabling a connector, calling Gladly's REST APIs, or implementing the Lookup API to provide data from your own services." So something like "Customer support platform with REST API for integration" or similar.
+
+5. auth_methods: From the snippets, I see "OAuth" mentioned. Rule 3 says: "If you see 'OAuth 2.0' → 'OAuth2'". The snippets mention "OAuth" so I should use "OAuth2". The auth_methods should be an array.
+
+6. primary_auth: Based on auth_methods, the primary would be "OAuth2"
+
+7. auth_notes: Explanation of authentication requirements. From the snippets mentioning "free trial developer access pricing OAuth", I can note that OAuth is used for authentication.
+
+8. access_model: The scraped page mentions "App Platform" and seems to suggest self-serve access ("Integrate seamlessly with Gladly by enabling a connector..."). But I need to determine if it's self-serve, paid-only, or contact-sales. The mention of "free trial" in search2 suggests there's a free trial available, which typically indicates self-serve access. Let me go with "self-serve".
+
+9. access_notes: "How to get access / credentials". From the text, seems like developers can get access through the developer documentation and free trial.
+
+10. api_type: From the scraped content: "REST API" and "calling Gladly's REST APIs". So "REST".
+
+11. api_breadth: The schema example shows "medium". From the text, it mentions REST API with connector, Lookup API - seems like medium breadth. I'll use "medium".
+
+12. has_mcp: Rule 4 says "has_mcp = true ONLY if the text explicitly mentions an MCP server from the app's own company. Community projects = false." search3 mentions "Gladly MCP server model context protocol official". This explicitly mentions an MCP server. But wait - rule 4 says "from the app's own company". The text says "Gladly MCP server model context protocol official" - this seems to be from Gladly themselves. However, I need to be careful. The rule says " ONLY if the text explicitly mentions an MCP server from the app's own company." The search snippet says "Gladly MCP server model context protocol official" which does mention MCP. But is it from Gladly's own company? Since it's mentioning "Gladly MCP server", it appears to be from Gladly. However, let me check the context more carefully.
+
+Actually, looking at the rule again: "has_mcp = true ONLY if the text explicitly mentions an MCP server from the app's own company. Community projects = false." The snippet says "Gladly MCP server model context protocol official" - this does mention MCP and it's associated with Gladly. So has_mcp should be true?
+
+Wait, but let me reconsider. The rule says "from the app's own company". If the text mentions "Gladly MCP server", that seems to be Gladly's own MCP server. So has_mcp = true?
+
+But then the schema has "mcp_url": null. If has_mcp is true, mcp_url should be a URL. But the rule also says "evidence_url must be a URL that appears in the provided text. Never construct a URL."
+
+Hmm, let me look at this more carefully. The search3 snippet: "Gladly MCP server model context protocol official" at https://developer.gladly.com. This does mention MCP.
+
+But actually, I'm second-guessing myself. Let me re-read rule 4: "has_mcp = true ONLY if the text explicitly mentions an MCP server from the app's own company. Community projects = false."
+
+The text does mention "Gladly MCP server" - this appears to be Gladly's own MCP server implementation. So has_mcp should be true.
+
+But wait - the schema has mcp_url as null. If has_mcp is true, what should mcp_url be? The rule says "evidence_url must be a URL that appears in the provided text. Never construct a URL." But mcp_url is a different field.
+
+Actually, I think I need to be more careful here. Let me look at the overall context. The question is whether Gladly has an MCP server. The snippet mentions "Gladly MCP server model context protocol official" which suggests they do have an MCP implementation.
+
+But I need to consider: is this "from the app's own company"? Yes, it's mentioning "Gladly MCP server", so it's from Gladly.
+
+However, I'm also noticing that the default/fallback might be relevant. Let me think about what makes sense.
+
+Actually, I think I should set has_mcp = true because the text explicitly mentions "Gladly MCP server". But then mcp_url... the text mentions https://developer.gladly.com as the URL, and the snippet is from that URL. So mcp_url could be "https://developer.gladly.com"?
+
+Wait, but the rule says "evidence_url must be a URL that appears in the provided text. Never construct a URL." And for mcp_url, there's no such explicit rule, but I should probably use a URL that appears in the text if possible.
+
+Hmm, let me reconsider. Maybe has_mcp should be false because while the text mentions "MCP", it might not be a standard MCP server implementation, or it might be from a community project. The snippet says "Gladly MCP server model context protocol official" - the word "official" suggests it is from Gladly.
+
+I think I'll set has_mcp = true since the text explicitly mentions an MCP server from Gladly.
+
+But wait - let me check the mcp_url field. If has_mcp is true, mcp_url should probably be a URL. The text provides https://developer.gladly.com as the best evidence URL. I could use that as mcp_url.
+
+Actually, I'm overcomplicating this. Let me re-read the rules one more time.
+
+Rule 4: "has_mcp = true ONLY if the text explicitly mentions an MCP server from the app's own company. Community projects = false."
+
+The text does explicitly mention "Gladly MCP server" - this is from Gladly's own company. So has_mcp = true.
+
+For mcp_url, I should use a URL from the text. The provided URLs are all https://developer.gladly.com. I'll use that.
+
+Actually wait, I just realized something. Let me re-read the search snippets more carefully:
+
+search3 snippet: "Developer documentation and API authentication reference for Gladly MCP server model context protocol official."
+
+This is a bit oddly phrased. It says "for Gladly MCP server model context protocol official". This could mean the documentation is about Gladly's MCP server implementation. So yes, this seems to confirm Gladly has an MCP server.
+
+13. buildability: I need to determine this based on the rules.
+   - "build-today" requires BOTH: access_model=self-serve AND api_type is REST or GraphQL or REST+Graph

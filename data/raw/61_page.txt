@@ -1,0 +1,17 @@
+GitHub Apps documentation
+Recommended
+GitHub Apps overview
+Quickstart for building GitHub Apps
+About creating GitHub Apps
+Articles
+About authentication with a GitHub App
+Your GitHub App can authenticate as itself, as an app installation, or on behalf of a user.
+About creating GitHub Apps
+About GitHub App managers
+About GitHub Marketplace for apps
+About marketplace badges
+About the setup URL
+About the user authorization callback URL
+You can specify URLs that users can be redirected to after they authorize a GitHub App.
+About using GitHub Apps
+About writing code for a GitHub App

@@ -1,0 +1,33 @@
+What are you building?
+Build with Catalyst (Next.js), customize Stencil themes,
+or go fully headless with the GraphQL Storefront API.
+Use REST and GraphQL APIs to manage products, orders,
+customers, and store settings programmatically.
+Set up B2B Edition for wholesale and enterprise buyers
+with company accounts, quotes, and custom pricing.
+Get started in 3 steps
+Create a sandbox store
+Sign up for a free BigCommerce trial store to test API
+calls and build integrations without affecting live data.
+Generate API credentials
+Navigate to Settings > API Accounts in your store
+control panel. Create credentials with the scopes you need.
+Make your first API call
+Make your first API request
+REST Management API
+You can experiment with our REST Management APIs using the Request Runner , which is built in to the API Reference for most endpoints. Copy and paste your store_hash and access_token into the form, then click Send .
+If you use Visual Studio Code , another way to make API requests is with the REST Client extension. Once you have it installed, create a new file called bigcommerce.http and paste in the following:
+To try out REST endpoints and view responses, you can import our API specification files into Postman or any other tool that can import Open API Specification files.
+To view sample JSON request bodies for each REST API resource, see the API Reference for that resource.
+REST Storefront API
+To make your first requests in a browser with the REST Storefront APIs, see the step-by-step tutorial Working with Storefront Cart and Checkout APIs .
+GraphQL Storefront API
+This example uses Request Runner to make an initial request that creates a Storefront API token. It is a REST API request, so you will need to copy and paste your API credentials .
+In the allowed_cors_origins array, include the URL(s) of the storefront from which you plan to use the token.
+While viewing your storefront in a browser, open the developer tools JavaScript console; for example, Google Chrome’s Console . Add your API token to the authorization header in the following code sample and add a valid Product ID for the entityId , then run the code in the console:
+Customer Login API
+Learn about the platform
+We think BigCommerce is the most welcoming, open SaaS commerce platform out there, both technologically and on a human level. Our partners, agencies, and the developers that work with them are always top of mind, because we believe that great ideas can come from outside. We think it’s key to build the future of commerce together , and you’ll see us operate with that mindset every day.
+Popular resources
+Query storefront data with GraphQL.
+Complete REST and GraphQL API docs.

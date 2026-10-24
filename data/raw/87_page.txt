@@ -1,0 +1,34 @@
+Xero Developer: Powering Your Innovation and Growth
+Developer Tools
+Xero's AI Toolkit
+Developer Tools and Resources
+Resources for custom builds
+Building your own app, agent or workflow, or for others? Get access to custom connections, list as a Xero certified development partner, collaborate with your clients.
+Automation Resources for Your Business or Practice
+Developer Programs That Accelerate Your Growth
+Xero Developer Growth Program
+Xero Referral Program
+Global Xero App Awards 2026
+Become an App Partner
+Start Building
+Sign up for a free account to build on the Xero platform. Take a look at our getting started guide, SDKs and the other steps you need to complete for certification.
+Get Certified
+Publish your App on the Xero App Store
+Resources for Accountant and Bookkeepers
+Whether you're automating workflows or building a bespoke integration for your practice, our platform remains free for internal innovation. Our toolkit of resources helps you build your own, or hire a developer to build an integration for you. Find all the resources you need here.
+Find a Custom Integrator
+Automation Resources for your Business or Practice
+Understanding how new pricing affects Accountants and Bookkeepers
+On 4-December we announced new pricing. Accountants and Bookkepers are exempt from this new pricing model.
+Building Custom Integrations?
+Sign up as a development partner
+If you’ve got proven experience building custom integrations with the Xero API, then register to become a developer partner.
+Custom connections
+A streamlined integration option for anyone building bespoke solutions for Xero businesses. It utilises the client credentials grant type to provide a simplified, efficient developer experience.
+Add a collaborator
+Talk to us!
+Weekly Office Hours
+Developer Day Discord Server
+Provide product feedback
+Exhibit at Xerocon 2026 in London and Denver!
+Ready to build with Xero?

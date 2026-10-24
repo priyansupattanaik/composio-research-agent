@@ -1,0 +1,35 @@
+Cloudflare Developer Docs
+Powerful primitives, seamlessly integrated
+Deploy with one command
+The AI inference platform
+Make your database feel instant, everywhere
+Build media pipelines without infrastructure headaches
+Build with your favorite AI agent
+Browse all agent setup guides
+What's new
+Hyperdrive support for Python Workers
+Stream Workflow instance events in your Worker or via the API with .subscribe()
+Access for Infrastructure now supports tagged targets and tag-based target criteria
+WAF Release - 2026-09-15
+WAF Release - Scheduled changes for 2026-09-22
+Grant teammates and agents access to specific Workers
+Four new roles let you control what members, User Groups, and API tokens can do across all Workers or within a specific Worker.
+Require fresh authentication for SAML identity providers
+Configure Cloudflare Access to request fresh identity provider authentication for each SAML login.
+Prevent Unified Billing fallback for BYOK third-party providers
+Prevent third-party provider requests from falling back to Unified Billing when provider credentials are unavailable.
+Security that scales
+Public websites & apps
+Corporate and home networks
+Faster web performance
+Fast, reliable and resilient DNS queries
+World's fastest authoritative DNS, consistently ranked #1 by DNSPerf; free, fully API-managed, DNSSEC supported.
+Minimize origin load and accelerate dynamic content
+Default caching for static assets, with cache rules for full control
+Assess your site speed and apply recommended optimizations
+Transform, optimize, and deliver images worldwide
+Understand the performance of your web pages
+Connect with Cloudflare
+Join the conversation
+View the source
+Read the latest

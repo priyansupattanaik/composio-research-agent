@@ -1,0 +1,9 @@
+App Platform
+REST API
+Integrate seamlessly with Gladly by enabling a connector,
+                    calling Gladly's REST APIs, or implementing the Lookup
+                    API to provide data from your own services.
+Chat SDK
+Help Center
+Tutorials
+Code Examples
